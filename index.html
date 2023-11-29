@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JS</title>
+    <link rel="stylesheet" href="./css/app.css">
+    <style>
+        #error{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container m-5">
+    <form action="" class="card shadow p-3">
+        <h1 class="card-title text-center">Audio Money</h1>
+
+        <div class="form-group">
+            <input type="text" placeholder="Minimum Value" id="min_val" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <input type="text" placeholder="Maximum Value" id="max_val" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <select id="operations" class="form-control" required>
+                <option value="" selected disabled>Select Operation</option>
+                <option value="1">Loop through numbers</option>
+                <option value="2">Sum Min and Max Value</option>
+                <option value="3">Sum Looped numbers</option>
+            </select>
+        </div>
+    <div class="form-group">
+        <button type="button" class="btn btn-outline-primary btn-lg" onclick="audioMoney()">Display Result</button>
+    </div>
+
+    <div id="result" class="alert alert-success">Result will show here</div>
+
+    <div id="error" class="alert alert-danger"></div>
+    </form>
+  
+</div>
+   
+<script src="./js/app.js"></script>
+</body>
+</html>
